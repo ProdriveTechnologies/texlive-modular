@@ -14,7 +14,7 @@ structure of the offical tarballs. Every subtree containing at least one
 (non-blacklisted) file is stored in a separate tarball. Tarballs are
 named after the path of the subtree, where `/` is substituted with `--`.
 
-# How these tarballs were generated.
+# How these tarballs were generated
 
 The official tarballs were downloaded, having the following checksums:
 
@@ -37,3 +37,10 @@ mkdir output
 (cd output; sha256sum *) > sha256sums-20180414.txt
 ./upload.sh <GitHub API token> <GitHub release ID>
 ```
+
+# Licensing
+
+As the files contained in these archives are merely unmodified copies of
+the ones provided by TeXLive, please refer to
+[the TeXLive page](https://www.tug.org/texlive/copying.html) for
+information on licensing.
