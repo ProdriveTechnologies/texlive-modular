@@ -1,6 +1,6 @@
 # Modular TeXLive release
 
-[The official tarballs](http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/)
+[The official tarballs of TeXLive](http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/)
 are very large in size; approximately 3.5 GB. Most documents created
 using TeXLive only depend on a fraction of this data. This makes the
 official tarballs unsuitable for use in automated build processes that
