@@ -5,7 +5,7 @@ set -eu
 for file in output/*; do
   echo "${file}"
   curl \
-      -s -o /dev/null \
+      -fs -o /dev/null \
       -H "Content-Type: application/octet-stream" \
       -H "Authorization: token $1" \
       --data-binary "@${file}" \
