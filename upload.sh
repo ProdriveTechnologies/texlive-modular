@@ -2,10 +2,10 @@
 
 set -eu
 
-for file in output/*; do
+for file in output/texlive-*.tar.xz; do
   echo "${file}"
   curl \
-      -fs -o /dev/null \
+      -s \
       -H "Content-Type: application/octet-stream" \
       -H "Authorization: token $1" \
       --data-binary "@${file}" \
