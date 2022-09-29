@@ -53,7 +53,7 @@ def create_tarballs(path):
         for directory in directories:
             for entry in collect_files(os.path.join(path, directory)):
                 files.append(os.path.join(directory, entry))
-        if len(files) > (2000 if directories else 3000):
+        if len(files) > (3500 if directories else 5000):
             raise Exception(
                 "Package %s is too large. It has %d files." % (path, len(files))
             )
