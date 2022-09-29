@@ -38,6 +38,13 @@ mkdir output
 ./upload.sh <GitHub API token> <GitHub release ID>
 ```
 
+Note that the release ID is _not_ the tag name, but can be fetched with the
+following command once the release has been created:
+
+```
+curl -s https://api.github.com/repos/ProdriveTechnologies/texlive-modular/releases/latest | jq '.id'
+```
+
 # Licensing
 
 As the files contained in these archives are merely unmodified copies of
